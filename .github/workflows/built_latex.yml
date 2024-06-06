@@ -27,6 +27,8 @@ jobs:
         with:
           name: PDF
           path: GutenkunstCV.pdf
+      # Commit all changed files back to the repository
+      - uses: stefanzweifel/git-auto-commit-action@v5
       #- name: Upload binaries to release
       #  if: startsWith(github.ref, 'refs/tags/')
       #  uses: svenstaro/upload-release-action@v2
